@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js",
+    "queue": "nodemon src/queueProcess.js"
   },
   "author": "Elieudo Maia",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "bull": "^3.18.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
