@@ -11,7 +11,7 @@ module.exports = {
             password
         }
 
-        await Queue.add({ user })
+        await Queue.add('UserRegistrationMail', { user })
 
         return res.status(201).json(user)
 
